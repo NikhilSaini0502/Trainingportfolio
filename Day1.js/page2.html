@@ -1,0 +1,25 @@
+<!--create html page like this-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a page2</title>
+    <script>
+        function dmad() {
+            let x = document.getElementById('name').value;
+            console.log(x);
+            let ans = eval(x);
+            let y = document.getElementById('h11').innerHTML = "Ans : " + ans;
+        }
+    </script>
+</head>
+<body>
+      <h1 id="h1">Welcome</h1>
+  <p id="p1">Enter your name:</p>
+  <input type="text" id="name" >
+  <button onclick="dmad()">Solve</button>
+  <h1 id="h11">Ans:</h1>
+</body>
+</html>
+

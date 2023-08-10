@@ -1,0 +1,70 @@
+#div1{
+    border: 1px solid green;
+    background-color:darkgreen;
+    padding-top: 1%;
+    padding: 14%;
+    }
+    #div2{
+        padding-left: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-bottom: 2%;
+        background-color: rgb(244, 244, 244);
+        }
+        ul li{
+            background-color: rgb(63, 61, 233);
+            border: 1px solid forestgreen;
+            list-style-type: none;
+            padding-top: 1px;
+            padding-left: 1%;
+            margin-top: 1%;
+            margin-left: 1%;
+            display: inline;
+            }  
+            #p1{
+              margin: 3%;
+              border: 2px solid black;
+              width: 50%;
+              left: 20px;
+              }
+       
+              #p2{
+                margin: 3%;
+                border: 2px solid black;
+                width: 50%;
+                right: 20px;
+                }
+                .section {
+                    width: 32%;
+                    height: 100px;
+                    margin-right:1%;
+                    display: inline-block;
+          
+                    padding-bottom: 10%;
+                    padding-top: 2%;
+                    margin-top: 2%;
+                    background-color:rgb(119, 119, 58);
+
+                    }
+                    .left-paragraph {
+                        float: left;
+                        width: 45%;
+                        margin-top: 1%;
+                        border: 1px solid black;
+                        margin-block-end: 1px;
+                        padding: 1%;
+                        word-spacing: 1px;
+                        background-color: aquamarine;
+                        color: black;
+                        }
+      
+                        .right-paragraph {
+                            float: right;
+                            width: 45%;
+                            margin-top: 1%;
+                            border: 1px solid red;
+                            margin-block-end: 1px;
+                            padding: 1%;
+                            background-color: aquamarine;
+                            color:black;
+                            }  

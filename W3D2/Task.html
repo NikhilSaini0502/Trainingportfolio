@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container "><form>
+        <h1><center>Login</center></h1>
+        <div class="mt-4">
+            <label class="form-label">User-Id</label>
+            <input type="text" class="form-control" id="user">
+        </div>
+        <div class="mt-4">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" id="pass" min="8">
+        </div>
+        <div class="mt-4 text-center">
+                <button id="signin" onclick="showAlert()">SignIn</button>
+                <button id="reset" onclick="showAlert()">Reset</button>
+        </div></form>
+    </div>
+
+    <script>
+        let arr = [
+        {userid:"Nikhil", password:"122"},
+        {userid:"Nikki", password:"1234"},
+        {userid:"Nikku", password:"12344"}
+];
+function signin(user, pass){
+    if (signin!=reset) {
+        x = document.getElementById("You are authorized person!").value;  
+    }
+    else{
+       x = document.getElementById("You are unauthorized person!").value;
+    }
+    document.getElementById("arr");
+};
+window.alert(signin);
+
+    </script>
+</body>
+</html>

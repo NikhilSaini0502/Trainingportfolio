@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: aquamarine;">
+    <div class="container bg-primary py-2">
+      <h1 style="text-align: center;">Calculator</h1>
+        <input type="text" id="text" class="form-control" style="background-color: rgb(174, 133, 154);">
+          <br>
+        
+         <div class="row ">
+             <div class="col-md-3">
+                <button class="form-control" onclick="click1(9)">9</button>
+             </div>
+             <div class="col-md-3">
+                <button class="form-control" onclick="click1(8)">8</button>
+             </div>
+             <div class="col-md-3">
+                <button class="form-control" onclick="click1(7)">7</button>
+             </div>
+             <div class="col-md-3">
+                <button class="form-control" onclick="equal()">=</button>
+             </div>
+         </div>
+         <br>
+               
+         <div class="row ">
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1(6)">6</button>
+            </div>
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1(5)">5</button>
+            </div>
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1(4)">4</button>
+        </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1(3)">3</button>
+            </div>
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1(2)">2</button>
+            </div>
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1(1)">1</button>
+            </div>
+            <div class="col-md-3">
+                <button class="form-control" onclick="click1('*')">*</button>
+             </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1(0)">0</button>
+            </div>
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1('+')">+</button>
+            </div>
+            <div class="col-md-3">
+               <button class="form-control" onclick="click1('-')">-</button>
+            </div>
+            <div class="col-md-3">
+                <button class="form-control" onclick="click1('/')">/</button>
+             </div>
+        </div>
+
+        <div class="row">
+         <div class="col-md-6">
+            <button class="form-control" onclick="clear1()">Clear</button>
+         </div>
+         <div class="col-md-6">
+            <button class="form-control" onclick="clear2()">Backspace</button>
+         </div>
+         </div>
+      </div>
+
+    <script>
+      var st = "";
+        function click1(a) {
+         st = st+a;
+         document.getElementById('text').value=st;
+        }
+
+        function equal(){
+         st =eval(st);
+         document.getElementById('text').value=st;
+
+        }
+
+        function clear1(){
+          st = "";
+          document.getElementById('text').value=st;
+        }
+
+        function clear2(){
+          st = st.slice(0,st.length-1);
+          document.getElementById('text').value=st;
+        }
+    </script>
+   
+</body>
+</html>

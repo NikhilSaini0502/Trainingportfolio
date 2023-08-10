@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Table on click</title>
+</head>
+<body>
+    <div class="container mt-2">
+            <div class="mt-2">
+                <label class="form-label"><h3><b> Table on click</b></h3></label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="r1" value="2">
+                    <label class="form-check-label" for="inlineRadio1"> 2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="r2" value="3">
+                    <label class="form-check-label" for="inlineRadio2"> 3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="r3" value="4">
+                    <label class="form-check-label" for="inlineRadio3"> 4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="r4" value="5">
+                    <label class="form-check-label" for="inlineRadio3"> 5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="table" id="r5" value="6">
+                    <label class="form-check-label" for="inlineRadio3"> 6</label>
+                  </div>
+            </div>
+            <div class="mt-2">
+                <button onclick="t1()" class="btn-dark"> Click here</button>
+            </div>
+            <div id="nah">
+    </div>
+    <script>
+       function t1(){
+            let x = document.getElementsByName("table");
+            if(document.getElementById('nah').hasChildNodes()){
+                document.getElementById('nah').removeChild(document.getElementById('nah').firstChild);
+            }
+            const mdiv = document.createElement("div");
+            mdiv.setAttribute('id','innerdiv');
+            document.getElementById('nah').appendChild(mdiv);
+            for(let r of x){
+                if(r.checked){
+                    for(let i=1;i<=10;i++){
+                    const para = document.createElement('p');
+                    para.innerText = r.value + " X " + i + " = " + r.value * i;
+                    document.getElementById('innerdiv').appendChild(para);
+
+                }
+            }
+            }
+        }
+    </script>
+</body>
+</html>
